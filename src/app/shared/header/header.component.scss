@@ -1,0 +1,32 @@
+.header__container{
+  width: 100vw;
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 367px;
+      &__item{
+        &__link{
+          text-decoration: none;
+          cursor: pointer;
+          color: var(--ex-gray-scale-700)
+        }
+      }
+    }
+  }
+}

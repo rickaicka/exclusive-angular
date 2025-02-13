@@ -1,0 +1,21 @@
+.top-header__container{
+  background-color: var(--ex-pure-black);
+  width: 100vw;
+  height: 48px;
+  display: inline-grid;
+  grid-template-columns: [first] 85vw [line2] 15vw;
+  &__shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ex-gray-scale-400);
+    & a{
+      padding: 0 5px;
+    }
+  }
+  &__locale{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
