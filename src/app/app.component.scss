@@ -1,1 +1,9 @@
 @import 'variables';
+
+.sidebar-highlights{
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 316px;
+}

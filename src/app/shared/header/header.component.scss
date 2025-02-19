@@ -1,9 +1,17 @@
 .header__container{
   width: 100vw;
-  height: 82px;
+  height: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  border-bottom: 1px solid var(--ex-gray-scale-400);
+  &__wrapper{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
   &__logo{
     height: 100%;
     display: flex;
@@ -24,9 +32,23 @@
         &__link{
           text-decoration: none;
           cursor: pointer;
-          color: var(--ex-gray-scale-700)
+          color: var(--ex-gray-scale-700);
+          &:hover{
+            text-decoration: underline;
+          }
         }
       }
+    }
+  }
+  &__products-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div{
+      margin-right: 10px;
+    }
+    & button, & input{
+      cursor: pointer;
     }
   }
 }

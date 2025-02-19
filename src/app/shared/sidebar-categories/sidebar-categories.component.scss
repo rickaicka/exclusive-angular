@@ -1,0 +1,27 @@
+.sidebar-categories{
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 20vw;
+    background: white;
+    padding: 0 20px 20px;
+  }
+  &__navigation{
+    width: 215px;
+    border-right: 1px solid var(--ex-gray-scale-400);
+    &__list{
+      padding-left: 8px;
+      padding-top: 24px;
+      &__item{
+        padding-bottom: 16px;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
+
+      }
+    }
+  }
+}
