@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
-    "build:dev": "ng build --configuration production --base-href https://github.com/rickaicka/rickaicka.github.io/",
+    "build:production": "ng build --configuration production --base-href https://github.com/rickaicka/rickaicka.github.io/",
     "serve:ssr:exclusive-angular": "node dist/exclusive-angular/server/server.mjs"
   },
   "private": true,
@@ -35,6 +35,7 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
