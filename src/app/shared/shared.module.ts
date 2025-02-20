@@ -6,27 +6,33 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SidebarCategoriesModule} from './sidebar-categories/sidebar-categories.module';
 import {HighlightsBannerModule} from './highlights-banner/highlights-banner.module';
+import {ProductModule} from './product/product.module';
+import {FlashSalesModule} from './flash-sales/flash-sales.module';
 
 const CustomModules: any[] = [
   TopHeaderModule,
   HeaderModule,
   SidebarCategoriesModule,
-  HighlightsBannerModule
+  HighlightsBannerModule,
+  ProductModule,
+  FlashSalesModule
 ]
-
-export const AngularModules: any[] = [
+const AngularModules: any[] = [
   RouterLink,
   RouterOutlet,
   FormsModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+
 ]
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    ...AngularModules,
     ...CustomModules,
   ],
   exports: [
+    ...AngularModules,
     ...CustomModules,
   ]
 })
