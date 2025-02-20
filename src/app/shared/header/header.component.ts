@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import {AngularModules} from '../shared.module';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AngularModules],
+  imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

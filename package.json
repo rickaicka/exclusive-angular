@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
+    "build:dev": "ng build --configuration production --base-href https://github.com/rickaicka/exclusive-angular/",
     "serve:ssr:exclusive-angular": "node dist/exclusive-angular/server/server.mjs"
   },
   "private": true,
@@ -39,6 +41,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "puppeteer": "^24.2.1",
     "typescript": "~5.5.2"
   }
 }
