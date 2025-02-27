@@ -1,14 +1,15 @@
 .header__container{
-  width: 100vw;
+  width: 1170px;
   height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--ex-gray-scale-400);
+  margin: 0 auto;
   &__wrapper{
-    width: 80vw;
+    width: 1170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 16px 0;
   }

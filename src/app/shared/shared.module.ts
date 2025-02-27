@@ -8,6 +8,7 @@ import {SidebarCategoriesModule} from './sidebar-categories/sidebar-categories.m
 import {HighlightsBannerModule} from './highlights-banner/highlights-banner.module';
 import {ProductModule} from './product/product.module';
 import {FlashSalesModule} from './flash-sales/flash-sales.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 const CustomModules: any[] = [
   TopHeaderModule,
@@ -22,7 +23,6 @@ const AngularModules: any[] = [
   RouterOutlet,
   FormsModule,
   ReactiveFormsModule,
-
 ]
 @NgModule({
   declarations: [],
