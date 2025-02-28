@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import {RouterLink} from '@angular/router';
+import {AngularModules} from '../shared.module';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [AngularModules],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

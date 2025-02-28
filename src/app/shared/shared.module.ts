@@ -18,7 +18,7 @@ const CustomModules: any[] = [
   ProductModule,
   FlashSalesModule
 ]
-const AngularModules: any[] = [
+export const AngularModules: any[] = [
   RouterLink,
   RouterOutlet,
   FormsModule,

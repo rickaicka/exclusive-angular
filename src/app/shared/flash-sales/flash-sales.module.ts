@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FlashSalesComponent} from './flash-sales.component';
+import {ProductModule} from '../product/product.module';
 
 
 
@@ -8,10 +9,10 @@ import {FlashSalesComponent} from './flash-sales.component';
   declarations: [],
   imports: [
     CommonModule,
-    FlashSalesComponent
+    FlashSalesComponent,
   ],
   exports: [
-    FlashSalesComponent
+    FlashSalesComponent,
   ]
 })
 export class FlashSalesModule { }
