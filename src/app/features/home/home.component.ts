@@ -14,14 +14,14 @@ export class HomeComponent implements OnInit {
   productsService = inject(ProductsService);
 
   ngOnInit(){
-    //this.getProducts();
+    this.getProducts();
   }
 
 
-  // getProducts(){
-  //   this.productsService.getProducts().subscribe((data) => {
-  //     console.log(data);
-  //   });
-  // }
+  getProducts(){
+    this.productsService.getProducts().subscribe((data) => {
+      console.log(data);
+    });
+  }
 
 }
