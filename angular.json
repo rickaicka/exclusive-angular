@@ -33,6 +33,10 @@
               {
                 "glob": "**/*",
                 "input": "public/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "exclusive-angular"
               }
             ],
             "styles": [
