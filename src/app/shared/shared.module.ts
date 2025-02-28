@@ -9,6 +9,7 @@ import {HighlightsBannerModule} from './highlights-banner/highlights-banner.modu
 import {ProductModule} from './product/product.module';
 import {FlashSalesModule} from './flash-sales/flash-sales.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 
 const CustomModules: any[] = [
   TopHeaderModule,
@@ -18,7 +19,7 @@ const CustomModules: any[] = [
   ProductModule,
   FlashSalesModule
 ]
-const AngularModules: any[] = [
+export const AngularModules: any[] = [
   RouterLink,
   RouterOutlet,
   FormsModule,

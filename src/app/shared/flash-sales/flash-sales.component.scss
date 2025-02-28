@@ -1,0 +1,27 @@
+.flash-sales{
+  &__container{
+    width: 100%;
+
+  }
+  &__header, &__timer, &__content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+  }
+  &__timer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 0;
+    &-title{
+
+    }
+    &-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 16px 0;
+    }
+  }
+}
