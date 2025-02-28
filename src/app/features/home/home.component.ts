@@ -19,9 +19,10 @@ export class HomeComponent implements OnInit {
 
 
   getProducts(){
-    this.productsService.getProducts().subscribe((data) => {
-      console.log(data);
-    });
+    // this.productsService.getProducts().subscribe((data) => {
+    //   console.log(data);
+    // });
+    console.log('ok')
   }
 
 }
