@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {SharedModule} from '../../shared/shared.module';
+import {ProductsService} from './products.service';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,19 @@ import {SharedModule} from '../../shared/shared.module';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  productsService = inject(ProductsService);
+
+  ngOnInit(){
+    this.getProducts();
+  }
+
+
+  getProducts(){
+    this.productsService.getProducts().subscribe((data) => {
+      console.log(data);
+    });
+  }
 
 }
