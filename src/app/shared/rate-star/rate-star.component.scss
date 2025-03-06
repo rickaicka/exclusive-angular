@@ -1,0 +1,16 @@
+.rate-star-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__stars{
+    & ul{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  &__reviews{
+    margin-left: 8px;
+    color: var(--ex-gray-scale-500);
+  }
+}

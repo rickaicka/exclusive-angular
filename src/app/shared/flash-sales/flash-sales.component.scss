@@ -1,27 +1,94 @@
 .flash-sales{
+  &__title{
+    color: var(--ex-red-scale-500);
+    margin-left: 8px;
+    font-weight: bold;
+  }
   &__container{
     width: 100%;
-
   }
   &__header, &__timer, &__content{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 16px 0;
+    & .rectangle-sales{
+      width: 20px;
+      height: 40px;
+      border-radius:4px;
+      background-color: var(--ex-red-scale-500);
+    }
+  }
+  &__content{
+    overflow: hidden;
+    width: 1230px;
+    &__scroll{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-x: scroll;
+      box-sizing: content-box;
+      scrollbar-width: none;
+      height: 400px;
+    }
   }
   &__timer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 16px 0;
+    display: inline-grid;
+    grid-template-columns: [first] 180px [line2] 650px [last] 300px;
+    width: 1230px;
+    justify-content: space-between;
     &-title{
-
+      margin-right: 16px;
     }
     &-container{
       display: flex;
       justify-content: flex-start;
       align-items: center;
       padding: 16px 0;
+    }
+    &-item{
+      &-double-dot{
+        margin: 0 8px;
+        color: var(--ex-red-scale-500);
+      }
+    }
+    &-arrows{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+    }
+    &-arrow-left, &-arrow-right{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--ex-gray-scale-300);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+    }
+    &-arrow-right{
+      transform: rotateY(180deg);
+    }
+  }
+  &__view-all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    & a{
+      width: 234px;
+      text-align: center;
+      border-radius: 8px;
+      padding: 16px;
+      background-color: var(--ex-red-scale-400);
+      color: var(--ex-gray-scale-100);
+      cursor: pointer;
+      &:hover{
+        background-color: var(--ex-red-scale-500);
+      }
     }
   }
 }

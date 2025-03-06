@@ -6,16 +6,18 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SidebarCategoriesModule} from './sidebar-categories/sidebar-categories.module';
 import {HighlightsBannerModule} from './highlights-banner/highlights-banner.module';
-import {ProductModule} from './product/product.module';
+import {ProductThumbnailModule} from './product-thumbnail/product-thumbnail.module';
 import {FlashSalesModule} from './flash-sales/flash-sales.module';
+import {RateStarModule} from './rate-star/rate-star.module';
 
 const CustomModules: any[] = [
   TopHeaderModule,
   HeaderModule,
   SidebarCategoriesModule,
   HighlightsBannerModule,
-  ProductModule,
-  FlashSalesModule
+  ProductThumbnailModule,
+  FlashSalesModule,
+  RateStarModule
 ]
 const AngularModules: any[] = [
   RouterLink,

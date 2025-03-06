@@ -1,7 +1,10 @@
 @import 'variables';
+*{
+  overflow: hidden;
+}
 
 .sidebar-highlights{
-  width: 1170px;
+  width: 1280px;
   display: flex;
   align-items: center;
   min-height: 316px;

@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+.product-thumbnail__container{
+  width: 254px;
+  height: 350px;
+  margin-right: 32px;
+  cursor: pointer ;
+  &__img-content{
+    width: 100%;
+    height: 270px;
+    background-color: var(--ex-gray-scale-300);
+    border-radius: 8px;
+    &__discount{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      & .discount-box{
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        width: 50px;
+        border-radius: 4px;
+        background-color: var(--ex-red-scale-500);
+        &__text{
+          color: var(--ex-gray-scale-100)
+        }
+      }
+      &__btns{
+        display: block;
+        width: 34px;
+      }
+      &__wishlist{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        padding: 4px;
+        background-color: white;
+        &.favorite:hover{
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          padding: 4px;
+          background-color: white;
+          background-repeat: no-repeat;
+          background-image: url('data:image/svg+xml;utf-8, <svg width="25" height="25" viewBox="-4 -5 25 25" fill="#{convertVarToColor(DF2648)}" xmlns="http://www.w3.org/2000/svg"> <path d="M8 5C5.7912 5 4 6.73964 4 8.88594C4 10.6185 4.7 14.7305 11.5904 18.8873C11.7138 18.961 11.8555 19 12 19C12.1445 19 12.2862 18.961 12.4096 18.8873C19.3 14.7305 20 10.6185 20 8.88594C20 6.73964 18.2088 5 16 5C13.7912 5 12 7.35511 12 7.35511C12 7.35511 10.2088 5 8 5Z" /> </svg> ');
+        }
+        &.detail:hover{
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          padding: 4px;
+          background-color: white;
+          background-repeat: no-repeat;
+          background-image: url('data:image/svg+xml;utf-8, <svg width="28" height="26" viewBox="-5.5 -8.5 28 26" fill="#{convertVarToColor(DF2648)}" xmlns="http://www.w3.org/2000/svg"> <path d="M20.257 6.962C20.731 7.582 20.731 8.419 20.257 9.038C18.764 10.987 15.182 15 11 15C6.81801 15 3.23601 10.987 1.74301 9.038C1.51239 8.74113 1.38721 8.37592 1.38721 8C1.38721 7.62408 1.51239 7.25887 1.74301 6.962C3.23601 5.013 6.81801 1 11 1C15.182 1 18.764 5.013 20.257 6.962V6.962Z" /> <path d="M11 11C12.6569 11 14 9.65685 14 8C14 6.34315 12.6569 5 11 5C9.34315 5 8 6.34315 8 8C8 9.65685 9.34315 11 11 11Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg> ');
+        }
+      }
+    }
+    &__detail{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 180px;
+      margin-top: -32px;
+    }
+    &__cart{
+      display: none;
+      width: 100%;
+      height: 40px;
+      background-color: var(--ex-pure-black);
+      color: var(--ex-gray-scale-100);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &:hover{
+      .product-thumbnail__container__img-content__cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__product{
+    &-name{
+      margin-top: 16px;
+    }
+    &-values{
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &__discount{
+        color: var(--ex-red-scale-500);
+      }
+      &__price{
+        margin-left: 8px;
+        color: var(--ex-gray-scale-500);
+        text-decoration: line-through;
+      }
+    }
+    &-rate{
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+}
+.wrap-thumb{
+  width: 94%;
+  padding: 8px 8px 0 8px;
+}
