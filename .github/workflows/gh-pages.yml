@@ -23,14 +23,14 @@ jobs:
       - name: Build
         run: npm run build:production
 
-      - name: Deploy
-        if: success()
-        run: ng deploy
-
 #      - name: Deploy
 #        if: success()
-#        uses: peaceiris/actions-gh-pages@v4
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_dir: dist/
-#          enable_jekyll: true
+#        run: ng deploy
+
+      - name: Deploy
+        if: success()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist/
+          enable_jekyll: true
