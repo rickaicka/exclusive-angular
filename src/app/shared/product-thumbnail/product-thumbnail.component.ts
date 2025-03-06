@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RateStarModule} from '../rate-star/rate-star.module';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-product-thumbnail',
@@ -10,4 +11,9 @@ import {RateStarModule} from '../rate-star/rate-star.module';
 })
 export class ProductThumbnailComponent {
 
+  public env: { IMG_SRC: string };
+
+  constructor() {
+    this.env = environment;
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-rate-star',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './rate-star.component.scss'
 })
 export class RateStarComponent {
+
+  public env: { IMG_SRC: string };
+
+  constructor() {
+    this.env = environment;
+  }
 
 }
