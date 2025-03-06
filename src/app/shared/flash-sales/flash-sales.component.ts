@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductThumbnailModule} from '../product-thumbnail/product-thumbnail.module';
 import {interval, takeWhile, tap} from 'rxjs';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-flash-sales',
@@ -9,7 +10,15 @@ import {interval, takeWhile, tap} from 'rxjs';
   templateUrl: './flash-sales.component.html',
   styleUrl: './flash-sales.component.scss'
 })
-export class FlashSalesComponent {
+export class FlashSalesComponent implements OnInit {
+  public env: { IMG_SRC: string };
+  constructor() {
+    this.env = environment;
+  }
+
+  ngOnInit() {
+  }
+
 
   scrollLeft(el: Element) {
     const animTimeMs = 400;
