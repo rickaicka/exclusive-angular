@@ -28,10 +28,10 @@
     </div>
     <div class="flash-sales__timer-arrows">
       <button class="flash-sales__timer-arrow-left" (click)="scrollLeft(scroll)">
-        <img src="Arrow.svg" alt="arrow-left">
+        <img [src]="env.IMG_SRC+'Arrow.svg'" alt="arrow-left">
       </button>
       <button class="flash-sales__timer-arrow-right" (click)="scrollRight(scroll)">
-        <img src="Arrow.svg" alt="arrow-left">
+        <img [src]="env.IMG_SRC+'Arrow.svg'" alt="arrow-left">
       </button>
     </div>
   </div>
