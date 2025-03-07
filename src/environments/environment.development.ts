@@ -1,3 +1,3 @@
 export const environment = {
-  IMG_SRC:'exclusive-angular/'
+  IMG_SRC:''
 };
