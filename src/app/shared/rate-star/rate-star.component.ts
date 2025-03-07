@@ -10,10 +10,7 @@ import {environment} from '../../../environments/environment';
 })
 export class RateStarComponent {
 
-  public env: { IMG_SRC: string };
-
   constructor() {
-    this.env = environment;
   }
 
 }

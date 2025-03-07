@@ -10,10 +10,8 @@ import {environment} from '../../../environments/environment';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  public env: { IMG_SRC: string };
 
   constructor() {
-    this.env = environment;
   }
 
   searchValue: any = '';

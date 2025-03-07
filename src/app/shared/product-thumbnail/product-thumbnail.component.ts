@@ -11,9 +11,6 @@ import {environment} from '../../../environments/environment';
 })
 export class ProductThumbnailComponent {
 
-  public env: { IMG_SRC: string };
-
   constructor() {
-    this.env = environment;
   }
 }

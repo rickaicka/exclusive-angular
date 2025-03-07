@@ -11,9 +11,7 @@ import {environment} from '../../../environments/environment';
   styleUrl: './flash-sales.component.scss'
 })
 export class FlashSalesComponent implements OnInit {
-  public env: { IMG_SRC: string };
   constructor() {
-    this.env = environment;
   }
 
   ngOnInit() {
