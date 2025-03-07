@@ -9,6 +9,7 @@ import {HighlightsBannerModule} from './highlights-banner/highlights-banner.modu
 import {ProductThumbnailModule} from './product-thumbnail/product-thumbnail.module';
 import {FlashSalesModule} from './flash-sales/flash-sales.module';
 import {RateStarModule} from './rate-star/rate-star.module';
+import {CategoriesModule} from './categories/categories.module';
 
 const CustomModules: any[] = [
   TopHeaderModule,
@@ -17,7 +18,8 @@ const CustomModules: any[] = [
   HighlightsBannerModule,
   ProductThumbnailModule,
   FlashSalesModule,
-  RateStarModule
+  RateStarModule,
+  CategoriesModule,
 ]
 const AngularModules: any[] = [
   RouterLink,
