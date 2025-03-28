@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from './header.component';
+import {CategoriesComponent} from './categories.component';
 
 
 
@@ -8,11 +8,10 @@ import {HeaderComponent} from './header.component';
   declarations: [],
   imports: [
     CommonModule,
-    HeaderComponent,
+    CategoriesComponent
   ],
   exports: [
-    HeaderComponent
+    CategoriesComponent
   ]
-
 })
-export class HeaderModule { }
+export class CategoriesModule { }

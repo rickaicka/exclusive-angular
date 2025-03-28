@@ -1,6 +1,7 @@
 @use "sass:meta";
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:host{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
 
   --ex-pure-black: #000000;
   --ex-pure-white: #FFFFFF;
@@ -104,6 +105,11 @@ $gradient-white-colors:(
   }
 }
 
+@function convertVarToColor($var){
+  $color: '%23'+$var;
+  @return $color;
+}
+
 .unset-button{
   padding: unset;
   margin: unset;
@@ -111,6 +117,19 @@ $gradient-white-colors:(
   border: unset;
   height: unset;
   width: unset;
+}
+
+.bold-font{
+  font-weight: bold;
+}
+
+.divider{
+  margin: 32px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--ex-gray-scale-400);
 }
 
 input:focus, textarea:focus, select:focus{

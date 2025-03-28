@@ -1,1 +1,13 @@
-<p>home works!</p>
+<section class="exclusive-home">
+  <div class="exclusive-home__container">
+    <div class="exclusive-home__flash-sales">
+      <app-flash-sales [showTimer]="true" [titleHighlight]='titleFlashHighlight' [titleContainer]="titleFlashSales"></app-flash-sales>
+    </div>
+    <div class="exclusive-home__categories">
+      <app-categories [categoryList]="categoriesList"></app-categories>
+    </div>
+    <div class="exclusive-home__best-selling">
+      <app-flash-sales [showTimer]="false" [titleHighlight]="titleBestSellingHighlight" [titleContainer]="titleBestSelling"></app-flash-sales>
+    </div>
+  </div>
+</section>

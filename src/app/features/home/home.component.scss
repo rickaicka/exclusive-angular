@@ -1,0 +1,14 @@
+.exclusive-home{
+  &__container{
+    display: block;
+    margin: 16px auto 0;
+    width: 1230px;
+  }
+  &__flash-sales, &__categories, &__best-selling{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

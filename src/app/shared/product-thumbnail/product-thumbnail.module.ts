@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from './header.component';
+import {ProductThumbnailComponent} from './product-thumbnail.component';
 
 
 
@@ -8,11 +8,10 @@ import {HeaderComponent} from './header.component';
   declarations: [],
   imports: [
     CommonModule,
-    HeaderComponent,
+    ProductThumbnailComponent
   ],
   exports: [
-    HeaderComponent
+    ProductThumbnailComponent
   ]
-
 })
-export class HeaderModule { }
+export class ProductThumbnailModule { }
