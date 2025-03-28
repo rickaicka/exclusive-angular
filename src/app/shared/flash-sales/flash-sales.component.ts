@@ -1,19 +1,23 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ProductThumbnailModule} from '../product-thumbnail/product-thumbnail.module';
 import {interval, takeWhile, tap} from 'rxjs';
 import {environment} from '../../../environments/environment';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-flash-sales',
   standalone: true,
-  imports: [ProductThumbnailModule],
+  imports: [ProductThumbnailModule, NgIf],
   templateUrl: './flash-sales.component.html',
   styleUrl: './flash-sales.component.scss'
 })
 export class FlashSalesComponent implements OnInit {
-  public env: { IMG_SRC: string };
+
+  @Input() showTimer = false;
+  @Input() titleContainer = '';
+  @Input() titleHighlight = '';
+
   constructor() {
-    this.env = environment;
   }
 
   ngOnInit() {
