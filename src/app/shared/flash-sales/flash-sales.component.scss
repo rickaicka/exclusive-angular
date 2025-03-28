@@ -33,7 +33,7 @@
   }
   &__timer{
     display: inline-grid;
-    grid-template-columns: [first] 180px [line2] 650px [last] 300px;
+    grid-template-columns: [first] 300px [line2] 650px [last] 250px;
     width: 1230px;
     justify-content: space-between;
     &-title{

@@ -1,31 +1,33 @@
 <section class="flash-sales__container">
   <div class="flash-sales__header">
     <div class="rectangle-sales"></div>
-    <p class="flash-sales__title quicksand-sm">Today's</p>
+    <p class="flash-sales__title quicksand-sm">{{titleHighlight}}</p>
   </div>
   <div class="flash-sales__timer">
-    <p class="flash-sales__timer-title quicksand-xm bold-font">Flash Sales</p>
-    <div class="flash-sales__timer-container">
-      <div class="flash-sales__timer-item">
-        <p class="flash-sales__timer-item-text quicksand-sm">Days</p>
-        <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
+    <p class="flash-sales__timer-title quicksand-xm bold-font">{{titleContainer}}</p>
+      <div class="flash-sales__timer-container">
+        <ng-container *ngIf="showTimer">
+          <div class="flash-sales__timer-item">
+            <p class="flash-sales__timer-item-text quicksand-sm">Days</p>
+            <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
+          </div>
+          <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
+          <div class="flash-sales__timer-item">
+            <p class="flash-sales__timer-item-text quicksand-sm">Hours</p>
+            <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
+          </div>
+          <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
+          <div class="flash-sales__timer-item">
+            <p class="flash-sales__timer-item-text quicksand-sm">Minutes</p>
+            <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
+          </div>
+          <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
+          <div class="flash-sales__timer-item">
+            <p class="flash-sales__timer-item-text quicksand-sm">Seconds</p>
+            <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
+          </div>
+        </ng-container>
       </div>
-      <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
-      <div class="flash-sales__timer-item">
-        <p class="flash-sales__timer-item-text quicksand-sm">Hours</p>
-        <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
-      </div>
-      <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
-      <div class="flash-sales__timer-item">
-        <p class="flash-sales__timer-item-text quicksand-sm">Minutes</p>
-        <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
-      </div>
-      <span class="flash-sales__timer-item-double-dot quicksand-xm bold-font">:</span>
-      <div class="flash-sales__timer-item">
-        <p class="flash-sales__timer-item-text quicksand-sm">Seconds</p>
-        <p class="flash-sales__timer-item-number quicksand-xxm bold-font">00</p>
-      </div>
-    </div>
     <div class="flash-sales__timer-arrows">
       <button class="flash-sales__timer-arrow-left" (click)="scrollLeft(scroll)">
         <img [src]="'Arrow.svg'" alt="arrow-left">
