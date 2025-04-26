@@ -1,12 +1,12 @@
-export class Category{
+import {ICategory} from '../interfaces/category.interface';
+import {CategoryImageType} from '../types/category-image.type';
+
+export class Category implements ICategory{
   id: number = 0;
   name: string = '';
   image: CategoryImageType = {category: 0, id: 0, image: '', name: ''};
-}
 
-export type CategoryImageType = {
-  category: number;
-  id: number;
-  image: string;
-  name: string;
+  constructor(data: ICategory) {
+    Object.assign(this, data);
+  }
 }

@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit {
 
   getCategories(){
     this.categoriesService.getCategories().subscribe((data) => {
-      console.log(data);
       this.categoriesList = data;
     })
   }
