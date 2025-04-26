@@ -6,7 +6,7 @@ export class Category implements ICategory{
   name: string = '';
   image: CategoryImageType = {category: 0, id: 0, image: '', name: ''};
 
-  constructor(data: ICategory) {
+  constructor(data?: ICategory) {
     Object.assign(this, data);
   }
 }
