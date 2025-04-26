@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import {Category} from '../../models/category.model';
+import {CategoryImageType} from '../../types/category-image.type';
+import {ICategory} from '../../interfaces/category.interface';
 
 @Component({
   selector: 'app-category-thumbnail',

@@ -4,13 +4,13 @@ import {interval, takeWhile, tap} from 'rxjs';
 import {CategoryThumbnailComponent} from '../category-thumbnail/category-thumbnail.component';
 import {CategoryThumbnailModule} from '../category-thumbnail/category-thumbnail.module';
 import {Category} from '../../models/category.model';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-categories',
   standalone: true,
   imports: [CategoryThumbnailModule,
-    NgForOf
+    NgForOf, NgIf
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss'
